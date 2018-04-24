@@ -1,0 +1,185 @@
+/* Hatta Custom Style */
+
+body{ 
+    margin: 0; 
+    padding: 0 10%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+p{
+    margin-top: 200px;
+}
+
+.top-nav{ 
+    padding: 10px; 
+    background-color: #34495e; 
+    margin-bottom: 40px;
+}
+
+.add{ 
+    background-color: #3498db; 
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+a:hover{
+    opacity: 0.75;
+}
+
+.table{
+    margin-top: 40px;
+    width: 96%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead{
+    background-color: #2c3e50;
+}
+
+thead th{
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+tr{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+td{
+    text-align: center;
+    padding: 15px 0;
+}
+
+td a{
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: dimgray;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.number{
+    width: 45px;
+}
+
+.action{
+    width: 130px;
+}
+
+.edit{
+    background-color: #3498db;
+}
+
+.hapus{
+    background-color: #e74c3c;
+}
+
+.modal{
+    padding: 10px;
+}
+
+input[type=text], input[type=file], select{
+    width: 100%;
+    padding: 15px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    transition: background-color .5s ease;
+    color: #34495e;
+    font-size: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input[type=text]:focus, input[type=file]:focus, select:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+option{
+    padding: 40px;
+}
+
+button.tambah{
+    border: none;
+    padding: 15px 45px;
+    width: 100%;
+    color: white;
+    background-color: #3498db;
+    transition: opacity .5s ease;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.tambah:hover{
+    opacity: 0.8;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    animation: animatee .5s;  
+    margin-top: 50px;
+}
+
+.simpan, .batal{
+    border: none;
+    padding: 15px 45px;
+    color: white;
+    transition: opacity .5s ease;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 45%;
+}
+
+.simpan{
+    background-color: #3498db;
+}
+
+.batal{
+    background-color: #e74c3c;
+}
+
+button{
+    transition: opacity .25s ease;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+@keyframes animatee{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
